@@ -64,6 +64,8 @@ pip install torch torchvision flask pillow requests timm
 
 The training notebook uses the same packages. A CUDA-enabled PyTorch installation is recommended for training but is not required to serve predictions.
 
+`src/trained_net_70.12.pth` is tracked with Git LFS rather than committed directly. Run `git lfs pull` after cloning; without it `app.py` fails at startup when it tries to load the weights.
+
 ## Run the API
 
 Start Flask from the source directory so local imports resolve normally:
