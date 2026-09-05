@@ -52,7 +52,7 @@ The included model accepts RGB images, resizes them to 64×64 pixels, and return
 
 ### 1. Start the inference API
 
-# The client calls the hosted API directly, so step 1 is not required.
+### The client calls the hosted API directly, so step 1 is not required.
 
 From the repository root:
 
