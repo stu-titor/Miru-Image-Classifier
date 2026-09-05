@@ -80,9 +80,11 @@ python app.py
 
 The API listens on `http://localhost:5000`.
 
+> **Note:** the desktop client does not call this local instance. It is hardcoded to the hosted API at `http://52.207.250.144:5000` (see `desktop-client/MainWindow.xaml.cs`). Running the backend locally is useful for direct `curl` requests, or if you change that address and rebuild the client.
+
 ### 2. Start the desktop client
 
-In a second terminal, from the repository root:
+The client calls the hosted API directly, so step 1 is not required. From the repository root:
 
 ```bash
 dotnet run --project desktop-client/MiruInterface.csproj
@@ -101,7 +103,7 @@ Both endpoints return a JSON array containing five prediction strings ordered fr
 
 ## Notes
 
-- The desktop client expects the Flask service at `http://localhost:5000`.
-- The included `trained_net_70.12.pth` checkpoint must remain beside `app.py`.
+- The desktop client sends requests to the hosted API at `http://52.207.250.144:5000`, not to a local instance. The address is hardcoded in `desktop-client/MainWindow.xaml.cs`; change it there and rebuild to target a different host.
+- The `trained_net_70.12.pth` checkpoint is tracked with Git LFS. Run `git lfs pull` after cloning, and keep the file beside `app.py`.
 - Training is documented in the Colab-oriented notebook at `python-backend/src/main.ipynb`.
 - Generated folders such as `.vs/`, `bin/`, `obj/`, `__pycache__/`, and notebook checkpoints are ignored by Git.
