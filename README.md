@@ -52,6 +52,8 @@ The included model accepts RGB images, resizes them to 64×64 pixels, and return
 
 ### 1. Start the inference API
 
+# The client calls the hosted API directly, so step 1 is not required.
+
 From the repository root:
 
 ```bash
@@ -84,7 +86,7 @@ The API listens on `http://localhost:5000`.
 
 ### 2. Start the desktop client
 
-The client calls the hosted API directly, so step 1 is not required. From the repository root:
+From the repository root:
 
 ```bash
 dotnet run --project desktop-client/MiruInterface.csproj
