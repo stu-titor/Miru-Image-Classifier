@@ -50,7 +50,9 @@ The included model accepts RGB images, resizes them to 64×64 pixels, and return
 
 ## Quick Start
 
-Download the .exe file: [Download Miru](https://github.com/stu-titor/Miru-Image-Classifier/releases/download/v1.0.0/MiruInterface.exe)
+Install the .exe file: [Download Miru](https://github.com/stu-titor/Miru-Image-Classifier/releases/download/v1.0.0/MiruInterface.exe)
+
+####OR
 
 ### 1. Start the inference API
 
