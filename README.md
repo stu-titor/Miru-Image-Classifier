@@ -1,5 +1,7 @@
 # Tiny ImageNet Image Classifier
 
+Install the .exe file: [Download Miru](https://github.com/stu-titor/Miru-Image-Classifier/releases/download/v1.0.0/MiruInterface.exe)
+
 A full-stack image classifier for the 200-class Tiny ImageNet dataset. The project combines a custom PyTorch convolutional network and Flask inference API with a Windows WPF desktop client.
 
 The included model accepts RGB images, resizes them to 64×64 pixels, and returns its top five predicted classes. The packaged checkpoint records **70.12% top-1 accuracy** (*~71% with TTA*).
@@ -49,10 +51,6 @@ The included model accepts RGB images, resizes them to 64×64 pixels, and return
 - .NET 10 SDK with WPF support
 
 ## Quick Start
-
-Install the .exe file: [Download Miru](https://github.com/stu-titor/Miru-Image-Classifier/releases/download/v1.0.0/MiruInterface.exe)
-
-####OR
 
 ### 1. Start the inference API
 
