@@ -1,4 +1,4 @@
-# Tiny ImageNet Image Classifier
+# Miru Image Classifier
 
 A full-stack image classifier for the 200-class Tiny ImageNet dataset. The project combines a custom PyTorch convolutional network and Flask inference API with a Windows WPF desktop client.
 
