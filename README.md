@@ -8,7 +8,7 @@ Install the standalone .exe file here: [Download Miru](https://github.com/stu-ti
 
 ## Features
 
-- A custom convolutional neural network architecture with two-conv residual blocks, batch norm, SiLU, squeeze-and-excitation attention, stochastic depth, and dropout.
+- A custom convolutional neural network with two-conv residual blocks, batch norm, SiLU, squeeze-and-excitation attention, stochastic depth, and dropout.
 - 200 Tiny ImageNet output classes identified through WordNet IDs
 - Top-5 inference with horizontal-flip test-time augmentation
 - Flask endpoints for local file uploads and remote image URLs
